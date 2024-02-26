@@ -39,13 +39,12 @@ const scroll = () => {
 };
 scroll();
 
-  let clutter = "";
-  const hed = document.querySelector(`.hero-h1`)
-  hed.textContent.split("").forEach((words)=>{
-    clutter += `<span>${words}</sapn>`
-  })
-  // document.querySelector(`.hero`).innerHTML = clutter
-
+let clutter = "";
+const hed = document.querySelector(`.hero-h1`);
+hed.textContent.split("").forEach((words) => {
+  clutter += `<span class="uppercase text-[37vw] translate-y-1/2 tilet-font">${words}</sapn>`;
+});
+document.querySelector(`.hero`).innerHTML = clutter;
 
 const loader = gsap.timeline();
 const speed = Math.random() * 0.1;
