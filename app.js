@@ -42,7 +42,7 @@ scroll();
 let clutter = "";
 const hed = document.querySelector(`.hero-h1`);
 hed.textContent.split("").forEach((words) => {
-  clutter += `<span class="uppercase text-[37vw] translate-y-1/2 tilet-font">${words}</sapn>`;
+  clutter += `<span class="uppercase text-[37vw] translate-y-7 inline-block tilet-font">${words}</sapn>`;
 });
 document.querySelector(`.hero`).innerHTML = clutter;
 
