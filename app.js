@@ -40,11 +40,12 @@ const scroll = () => {
 scroll();
 
 let clutter = "";
-const hed = document.querySelector(`.hero-h1`);
-hed.textContent.split("").forEach((words) => {
-  clutter += `<span class="uppercase text-[37vw] translate-y-7 inline-block tilet-font">${words}</sapn>`;
+const text = document.querySelector(`.hero-h1`);
+console.log(text.textContent.split(""));
+text.textContent.split("").forEach((words) => {
+  clutter += `<sapn class="spa uppercase text-[37vw] translate-y-1/2 inline-block tilet-font">${words}</span>`;
 });
-document.querySelector(`.hero`).innerHTML = clutter;
+document.querySelector(`.hero-h1`).innerHTML = clutter;
 
 const loader = gsap.timeline();
 const speed = Math.random() * 0.1;
@@ -177,3 +178,6 @@ loader
     },
     "sam"
   );
+gsap.to(`.hero-h1`, {
+  y: "-13%",
+});
