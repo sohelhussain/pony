@@ -43,7 +43,7 @@ let clutter = "";
 const text = document.querySelector(`.hero-h1`);
 console.log(text.textContent.split(""));
 text.textContent.split("").forEach((words) => {
-  clutter += `<sapn class="spa uppercase text-[37vw] translate-y-1/2 inline-block tilet-font">${words}</span>`;
+  clutter += `<span class="spa uppercase text-[37vw] translate-y-1/2 inline-block tilet-font">${words}</span>`;
 });
 document.querySelector(`.hero-h1`).innerHTML = clutter;
 
@@ -178,6 +178,9 @@ loader
     },
     "sam"
   );
-gsap.to(`.hero-h1`, {
+gsap.to(`.spa`, {
   y: "-13%",
+  stagger: {
+    amount: 0.3,
+  },
 });
