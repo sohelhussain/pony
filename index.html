@@ -20,6 +20,9 @@
       .tilet-font {
         font-family: "title";
       }
+      .content {
+        font-family: "content";
+      }
     </style>
     <link
       rel="stylesheet"
@@ -30,7 +33,7 @@
   <body>
     <div id="main" class="w-full h-screen">
       <nav
-        class="hidden items-center z-10 justify-between w-full px-4 py-0 fixed"
+        class="flex items-center z-10 justify-between w-full px-4 py-0 fixed"
       >
         <div class="nav-left">
           <svg
@@ -125,15 +128,24 @@
           </h3>
         </div>
       </nav>
-      <div class="page1 bg-green-300 w-full h-screen translte-y-full">
+      <div class="page1 w-full min-h-screen translate-y-full">
         <div
-          class="hero bg-red-200 h-[70%] -translate-y-8 overflow-hiddn text-center"
+          class="hero h-[70%] -translate-y-8 overflow-hidden text-center"
         >
           <h1 class="hero-h1 uppercase text-[37vw] tilet-font">pony</h1>
         </div>
+        <div class="container w-[64%] text-center my-0 mx-auto -mt-64">
+          <p class="js-story ff-c text-5xl font-thin content">Pony est né d’un rêve, celui de raconter de belles histoires à propos de jolies marques.<br>
+            Notre mission est de donner encore plus de sens à ce que vous faites et de vous révéler au monde.<br>
+            Nous avons conscience qu’il est parfois difficile de parler de soi ou de son projet. <br>
+            Mais nous croyons au pouvoir de l’écoute et de l’attention pour vous aider à passer d’un discours de tête, à un discours de cœur.<br>
+            En prenant le temps d’échanger, de rire, parfois de pleurer, pour trouver ensemble les mots les plus justes, l’image la plus inspirante et les actions les plus efficaces pour votre marque ou votre entreprise.</p>
+        </div>
+      </div>
+      <div class="page2 w-full h-screen bg-red-50">
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
