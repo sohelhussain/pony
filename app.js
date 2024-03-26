@@ -173,3 +173,14 @@ loader
     },
     "sam"
   );
+gsap.to(".spa",{
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".spa",
+    scroller: "body",
+    // markers: true,
+    start:"-350% 0%",
+    end: "-230% 100%",
+    scrub: 1
+  }
+})
