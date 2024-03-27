@@ -165,7 +165,7 @@ loader
   .to(
     `.spa`,
     {
-      y: "-13%",
+      y: "-6%",
       stagger: {
         amount: 0.3,
       },
