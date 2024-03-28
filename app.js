@@ -19,7 +19,7 @@ scroll();
 let clutter = "";
 const text = document.querySelector(`.hero-h1`);
 text.textContent.split("").forEach((words) => {
-  clutter += `<span class="spa uppercase text-[37vw] translate-y-1/2 inline-block tilet-font">${words}</span>`;
+  clutter += `<span class="spa uppercase text-[37vw] translate-y-[80%] inline-block tilet-font">${words}</span>`;
 });
 text.innerHTML = clutter;
 
@@ -179,8 +179,8 @@ gsap.to(".spa",{
     trigger: ".spa",
     scroller: "body",
     // markers: true,
-    start:"-350% 0%",
-    end: "-230% 100%",
+    start:"-380% 0%",
+    end: "-250% 100%",
     scrub: 1
   }
 })
