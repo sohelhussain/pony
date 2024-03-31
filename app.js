@@ -195,7 +195,7 @@ const time = gsap.timeline({
     scrub: 1
   }
 });
-time.to(".spark-img",{
+time.to(".lazy",{
   rotate:5,
   y:"10%"
 },"box")
@@ -203,6 +203,6 @@ time.to(".let",{
   rotate:-5,
   y:"-20%"
 },"box")
-time.to(".lazy",{
+time.to(".lazy-girl",{
   y:"20%"
 },"box")
