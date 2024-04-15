@@ -206,3 +206,25 @@ time.to(".let",{
 time.to(".lazy-girl",{
   y:"20%"
 },"box")
+
+// text moves
+
+const textAnimation = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".page2",
+    scroller: "body",
+    // markers: true,
+    start: "0% 100%",
+    end: "500% 0%",
+    scrub: 1,
+  }
+})
+textAnimation.to(".top-hed-one",{
+  x: "-100%"
+},"scroll")
+textAnimation.to(".top-hed-mid",{
+  x: "0%"
+},"scroll")
+textAnimation.to(".top-hed-down",{
+  x: "-100%"
+},"scroll")
