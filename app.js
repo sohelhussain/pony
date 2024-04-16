@@ -2,7 +2,6 @@ const scroll = () => {
   const lenis = new Lenis()
 
   lenis.on('scroll', (e) => {
-    console.log(e)
   })
   
   lenis.on('scroll', ScrollTrigger.update)
@@ -228,3 +227,18 @@ textAnimation.to(".top-hed-mid",{
 textAnimation.to(".top-hed-down",{
   x: "-100%"
 },"scroll")
+
+const svgAnimation = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".page3",
+    scroller: "body",
+    markers: true,
+    start: "50% 50%",
+    end: "50% 10%",
+    scrub: 1,
+  }
+})
+svgAnimation.to("svg-line",{
+
+  rotate: 180,
+})
