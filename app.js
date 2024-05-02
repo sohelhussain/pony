@@ -239,6 +239,5 @@ const svgAnimation = gsap.timeline({
   }
 })
 svgAnimation.to("svg-line",{
-
   rotate: 180,
 })
