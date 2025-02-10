@@ -232,7 +232,7 @@ const svgAnimation = gsap.timeline({
   scrollTrigger:{
     trigger: ".page3",
     scroller: "body",
-    markers: true,
+    // markers: true,
     start: "50% 50%",
     end: "50% 10%",
     scrub: 1,
